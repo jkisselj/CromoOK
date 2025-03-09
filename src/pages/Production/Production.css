@@ -1,0 +1,111 @@
+.category-page {
+    padding-bottom: 3rem;
+  }
+  
+  .category-header {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .category-description {
+    font-size: 1.1rem;
+    max-width: 800px;
+    color: var(--color-text-secondary);
+  }
+  
+  .filters-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-large);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: 1.5rem;
+    align-items: end;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .filter-label {
+    font-weight: 500;
+    color: var(--color-text);
+  }
+  
+  .filter-inputs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .filter-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius-small);
+    padding: 0.5rem;
+    color: var(--color-text);
+    width: 100%;
+  }
+  
+  .filter-select {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius-small);
+    padding: 0.5rem;
+    color: var(--color-text);
+    width: 100%;
+  }
+  
+  .filter-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-secondary);
+  }
+  
+  .filter-btn {
+    height: 40px;
+    font-weight: 500;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 992px) {
+    .filters-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .category-title {
+      font-size: 1rem;
+    }
+    
+    .filters-section {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .category-header {
+      padding: 1rem 0;
+    }
+    
+    .category-title {
+      font-size: 0.75rem;
+    }
+  }

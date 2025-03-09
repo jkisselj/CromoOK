@@ -1,0 +1,122 @@
+.location-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-medium);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+  
+  .location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-large);
+  }
+  
+  .location-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .location-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-medium);
+  }
+  
+  .location-card:hover .location-image img {
+    transform: scale(1.05);
+  }
+  
+  .location-type {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-size-small);
+    font-weight: 500;
+  }
+  
+  .location-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+  .location-name {
+    font-size: var(--font-size-large);
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
+  }
+  
+  .location-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .location-rating svg {
+    fill: gold;
+  }
+  
+  .location-city {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: var(--font-size-small);
+  }
+  
+  .location-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .feature-tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-size-small);
+  }
+  
+  .feature-more {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-small);
+  }
+  
+  .location-price {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .price-value {
+    font-size: var(--font-size-large);
+    font-weight: 500;
+    color: var(--color-primary);
+  }
+  
+  .price-unit {
+    font-size: var(--font-size-small);
+    color: rgba(255, 255, 255, 0.7);
+  }

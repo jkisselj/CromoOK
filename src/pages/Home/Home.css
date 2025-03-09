@@ -1,0 +1,134 @@
+.home-page {
+    min-height: 100vh;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/home/kooduser/kood/ProjectChromok/chromok/my-app-name/public/images/herockground-ba.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius-large);
+    backdrop-filter: blur(5px);
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+  }
+  
+  /* Categories Section */
+  .categories-section {
+    padding: 2rem 0;
+  }
+  
+  /* Locations Grid */
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* Featured and Popular Sections */
+  .featured-section,
+  .popular-section {
+    padding: 3rem 0;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    padding: 4rem 0;
+    background-color: rgba(30, 30, 30, 0.8);
+    margin: 3rem 0;
+  }
+  
+  .cta-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-text {
+    margin-bottom: 2rem;
+    color: var(--color-text-secondary);
+  }
+  
+  .cta-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .locations-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .locations-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 40vh;
+    }
+    
+    .hero-content {
+      padding: 1.5rem;
+    }
+    
+    .hero-title {
+      font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .locations-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .hero-section {
+      height: 35vh;
+    }
+    
+    .cta-title {
+      font-size: 1.5rem;
+    }
+  }
