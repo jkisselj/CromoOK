@@ -3,7 +3,7 @@
 /* Wedding-specific styles */
 .wedding-header {
     background-color: rgba(30, 30, 30, 0.8);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/home/kooduser/kood/ProjectChromok/chromok/my-app-name/public/images/wedding-header.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dbpam5zuf/image/upload/t_Grayscale/v1741593133/wedding-header_at6avy.jpg');
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
